@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NewCalcMobile.MainPage">
+
+    <ScrollView BackgroundColor="LightGray">
+        <StackLayout>
+            <Frame BackgroundColor="Black" Padding="12" CornerRadius="0">
+                <Label Text="NewCalcMobile" HorizontalTextAlignment="Center" TextColor="LightSkyBlue" BackgroundColor="Black" FontSize="36"/>
+            </Frame>
+            <Grid RowDefinitions="*, *"
+                  ColumnDefinitions="*, *"
+                  Padding="0, 30">
+                <Label Text="Weight: " FontSize="Large" Grid.Column="0" Grid.Row="0"/>
+                <Entry x:Name="WeightEntry" Keyboard="Numeric" PropertyChanged="SetWeight" FontSize="Large" Grid.Column="1" Grid.Row="0"/>
+
+                <Label Text="Quantity" FontSize="Large" Grid.Column="0" Grid.Row="1"/>
+                <Entry x:Name="QuantityEntry" Keyboard="Numeric" PropertyChanged="SetQuantity" FontSize="Large" Grid.Column="1" Grid.Row="1"/>
+
+                <Label Text="REF" FontSize="Large" Grid.Column="0" Grid.Row="2"/>
+                <Entry x:Name="REFEntry" Keyboard="Numeric" PropertyChanged="SetREF" FontSize="Large" Grid.Column="1" Grid.Row="2"/>
+
+                <Label Text="Grain?" FontSize="Large" Grid.Column="0" Grid.Row="3" />
+                <Switch IsToggled="False" Toggled="SwitchSetIsGrain" Grid.Column="1" Grid.Row="3" OnColor="LightGreen" ThumbColor="Black"/>
+            </Grid>
+            <Label x:Name="ElementNumLabel" FontSize="Large"/>
+
+            <Label x:Name="CurrentTotalNewLabel" FontSize="Large" Padding="0, 10"/>
+
+            <Button Text="Add Element" Clicked="AddElement" BackgroundColor="LightSkyBlue" FontSize="Large" Padding="0, 10" CornerRadius="15" BorderColor="Black" BorderWidth="2"/>
+
+            <Button Text="Finish and Calculate Standoff" Clicked="ShowTotals" BackgroundColor="LightSkyBlue" FontSize="Large" Padding="0, 10" CornerRadius="15" BorderColor="Black" BorderWidth="2"/>
+            
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

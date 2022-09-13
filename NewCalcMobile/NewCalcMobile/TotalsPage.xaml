@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NewCalcMobile.TotalsPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="LightGray">
+            
+            <Frame BackgroundColor="Black" Padding="12" CornerRadius="0">
+                <Label Text="Totals:" HorizontalTextAlignment="Center" TextColor="LightSkyBlue" BackgroundColor="Black" FontSize="40"/>
+            </Frame>
+
+            <Label x:Name="NumElementLabel" TextColor="Black" FontSize="Large" Padding="0, 10"/>
+
+            <Label x:Name="TotalNEWLabel" TextColor="Black" FontSize="Large" Padding="0, 10"/>
+
+            <Label x:Name="wCoverLabel" TextColor="Black" FontSize="Large" Padding="0, 10"/>
+
+            <Label x:Name="woCoverLabel" TextColor="Black" FontSize="Large" Padding="0, 10"/>
+
+            <Label x:Name="OverPressureLabel" TextColor="Black" FontSize="Large" Padding="0, 10"/>
+
+            <Label x:Name="LightFragLabel" TextColor="Black" FontSize="Large" Padding="0, 10"/>
+
+            <Label x:Name="HeavyFragLabel" TextColor="Black" FontSize="Large" Padding="0, 10"/>
+
+            <Button Text="Restart" Clicked="RestartApp" BackgroundColor="LightSkyBlue" FontSize="Large" Padding="0, 10" CornerRadius="15" BorderColor="Black" BorderWidth="2"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

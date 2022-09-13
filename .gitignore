@@ -1,0 +1,7 @@
+*.DS_Store
+/NewCalcMobile/NewCalcMobile/bin
+/NewCalcMobile/NewCalcMobile/obj
+/NewCalcMobile/NewCalcMobile.iOS/bin
+/NewCalcMobile/NewCalcMobile.iOS/obj
+/NewCalcMobile/NewCalcMobile.Android/bin
+/NewCalcMobile/NewCalcMobile.Android/obj
