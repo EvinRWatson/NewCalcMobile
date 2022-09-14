@@ -1,4 +1,5 @@
 *.DS_Store
+/.vs
 /NewCalcMobile/NewCalcMobile/bin
 /NewCalcMobile/NewCalcMobile/obj
 /NewCalcMobile/NewCalcMobile.iOS/bin
